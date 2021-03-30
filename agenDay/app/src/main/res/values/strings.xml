@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">agenDay</string>
+    <string name="entrar">Entrar</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="esqueci_senha">Esqueci a senha</string>
+    <string name="nao_tenho_cadastro">Não tenho cadastro</string>
+
+
+</resources>

@@ -1,0 +1,28 @@
+###  C -Create
+POST http://localhost:8080/accounts
+Content-Type: application/json
+
+{
+    "nomeUsuario": "Amanda Biagi",
+    "dataNascimentoUsuario": "04/03/1992",
+    "emailUsuario": "amandatec.biagi@gmail.com"
+}
+
+### R - Read
+GET http://localhost:8080/accounts
+Content-Type: application/json
+
+### U - Update
+PUT http://localhost:8080/accounts/amandatec.biagi@gmail.com
+Content-Type: application/json
+
+{
+    "nomeUsuario": "Amanda Rocha de Biagi",
+    "dataNascimentoUsuario": "04/03/1992",
+    "emailUsuario": "amandatec.biagi@gmail.com"
+}
+
+
+### U - Update
+DELETE http://localhost:8080/accounts
+Content-Type: application/json

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/padrao_escuro"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="149dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="148dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/entrar"
+        android:textColor="@color/padrao_branco"
+        android:textSize="55sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_logo"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="278dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/customizar_input"
+        android:fontFamily="@font/lato_regular"
+        android:hint="@string/email"
+        android:paddingLeft="10dp"
+        android:textColor="@color/padrao_escuro"
+        android:textColorHint="@color/padrao_claro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_entrar"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_senha"
+        android:layout_width="278dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/customizar_input"
+        android:fontFamily="@font/lato_regular"
+        android:hint="@string/senha"
+        android:paddingLeft="10dp"
+        android:textColor="@color/padrao_escuro"
+        android:textColorHint="@color/padrao_claro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_email"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="147dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="64dp"
+
+        android:background="@color/padrao_claro"
+        android:text="@string/entrar"
+        android:textColor="@color/padrao_branco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_senha"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_esqueci_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/esqueci_senha"
+        android:textColor="@color/padrao_branco"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_sem_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/nao_tenho_cadastro"
+        android:textColor="@color/padrao_branco"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_esqueci_senha"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/iv_entrar"
+        android:layout_width="226dp"
+        android:layout_height="216dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/mobile_login_bro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_sem_cadastro"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
